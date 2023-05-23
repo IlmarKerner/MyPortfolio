@@ -1,0 +1,41 @@
+<div class="contact-container">
+    <div class="contact-description">
+        <h3>Got a problem so solve?</h3>
+        <div>
+            <p class="description1">Contact me through this form, I am interested in hearing you, knowing your ideas and contributing to your projects with my work.</p>
+            <p class="description2">Need a Frontend developer? Contact me!</p>
+        </div>
+    </div>
+    <form class="input-container" (submit)="sendMail()" #myForm ngNativeValidate>
+        <div class="inputText">
+            <input required type="text" placeholder="Your name..." name="name" #nameField>
+        </div>
+        <div class="inputEmail">
+            <input required type="email" placeholder="Your email..." name="email" #emailField pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+        </div>
+        <div class="inputMessage">
+            <textarea required cols="30" rows="10" placeholder="Your message..." name="message" #messageField></textarea>
+        </div>
+        <button type="submit" (click)="sendAnimation()" #sendButton [class.d-none]="sendetMail" [class.d-block]="!sendetMail">Send message :)</button>
+        <div class="container" [class.d-none]="!sendetMail" [class.d-block]="sendetMail">
+            <div class="box">
+                <div class="border one"></div>
+                <div class="border two"></div>
+                <div class="border three"></div>
+                <div class="border four"></div>
+
+                <div class="line one"></div>
+                <div class="line two"></div>
+                <div class="line three"></div>
+            </div>
+        </div>
+    </form>
+    <div class="up-button">
+        <a href="#"><img src="./assets/img/up-button.png"></a>
+    </div>
+    <div class="contact-shadow">
+        <img src="./assets/img/contact-shadow.png">
+    </div>
+</div>
+
+<!-- Animated submit buttons -->

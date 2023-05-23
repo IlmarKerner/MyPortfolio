@@ -1,0 +1,36 @@
+.contact-headline {
+    width: 100vw;
+    height: 300px;
+    background: #141D2F;
+    position: relative;
+    display: flex;
+    align-items: center;
+    h1 {
+        margin: 0;
+        width: 376px;
+        height: 108px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 120%;
+        text-align: center;
+        color: #FFFFFF;
+        position: absolute;
+        left: 100px;
+    }
+    @media (max-width: 950px) {
+        width: 100%;
+        height: 200px;
+        h1 {
+            width: 188px;
+            height: 54px;
+            font-size: 45px;
+            left: 25px;
+        }
+        img {
+            width: 22px;
+            height: 4px;
+        }
+    }
+}

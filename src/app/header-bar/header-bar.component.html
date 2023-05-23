@@ -1,0 +1,35 @@
+<div class="headerbar">
+    <div class="header">
+        <a href="#home">
+            <h1 routerLink="/" class="underline-name">
+                <span>I</span>
+                <span style="color: #825afa">l</span>
+                <span>m</span>
+                <span>a</span>
+                <span style="color: #01B9E2">r</span>
+            </h1>
+        </a>
+        <div class="header-about">
+            <a href="#about">About Me</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+        </div>
+        <div class="burger-menu" (click)="openMenu()" [class.hide]="isOpen">
+            <img src="./assets/img/burger-menu.png">
+        </div>
+    </div>
+</div>
+
+<!-- Mobile version -->
+
+<div class="hidden-menu" [class.slidein]="isOpen" [class.slideout]="!isOpen">
+    <div class="hidden-header-about">
+        <a href="#about" (click)="closeMenu()">About Me</a>
+        <a href="#skills" (click)="closeMenu()">Skills</a>
+        <a href="#portfolio" (click)="closeMenu()">Portfolio</a>
+        <a routerLink="/imprint" (click)="closeMenu()">Imprint</a>
+    </div>
+    <div class="close-menu" (click)="closeMenu()">
+        <img src="./assets/img/close.png">
+    </div>
+</div>

@@ -1,0 +1,367 @@
+.my-skills-container {
+    height: 500px;
+    width: 100vw;
+    background: #141D2F;
+    position: relative;
+    display: flex;
+    @media (max-width: 1400px) {
+        height: 800px;
+    }
+    @media (max-width: 1200px) {
+        height: 800px;
+    }
+    @media(max-width: 950px) {
+        display: none;
+    }
+}
+
+.container {
+    height: 110px;
+    background-color: #141D2F;
+}
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 54px;
+    position: absolute;
+    width: 1000px;
+    height: 414.41px;
+    left: 100px;
+    z-index: 3;
+    @media (max-width: 1800px) {
+        width: 850px;
+    }
+    @media (max-width: 1600px) {
+        width: 721px;
+    }
+    @media (max-width: 1400px) {
+        top: 400px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    @media (max-width: 1200px) {
+        top: 400px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+.first-skillline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px;
+    width: 100%;
+    height: 100px;
+    flex: none;
+    img {
+        width: 88px;
+        height: 100px;
+        &:hover {
+            transform: translateY(-30px);
+            transition: all 125ms ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+
+.second-skillline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px;
+    width: 100%;
+    height: 100px;
+    flex: none;
+    img {
+        width: 88px;
+        height: 100px;
+        &:hover {
+            transform: translateY(-30px);
+            transition: all 125ms ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+
+.third-skillline {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 0px;
+    width: 40%;
+    height: 117.41px;
+    flex: none;
+    img {
+        width: 88px;
+        height: 100px;
+        &:hover {
+            transform: translateY(-30px);
+            transition: all 125ms ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+
+.skills-description {
+    position: absolute;
+    width: 571px;
+    height: 180px;
+    right: 0;
+    top: 35px;
+    z-index: 3;
+    h1 {
+        width: 473px;
+        height: 108px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 90px;
+        line-height: 120%;
+        text-align: right;
+        color: #FFFFFF;
+        margin: 0;
+    }
+    p {
+        width: 471px;
+        height: 38px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: right;
+        color: #FFFFFF;
+    }
+    img {
+        position: absolute;
+        right: 0;
+        top: 57px;
+    }
+    .get-in-touch {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        width: 165px;
+        height: 58px;
+        top: 240px;
+        right: 195px;
+        background: #00BEE8;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 0px 30px 0px 30px;
+        cursor: pointer;
+        a {
+            text-align: center;
+            width: 165px;
+            height: 25px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 120%;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        &:hover {
+            background: rgb(75, 71, 255);
+            transform: scale(1.15);
+            transition: all 125ms ease-in-out;
+        }
+    }
+}
+
+.green-shadow {
+    position: absolute;
+    z-index: 1;
+    top: 15px;
+    width: 300px;
+    height: 700px;
+    overflow: hidden;
+    direction: rtl;
+    img {
+        position: absolute;
+    }
+}
+
+// from here in Mobile
+.my-skills-container-mobile {
+    height: 1000px;
+    width: 100%;
+    background: #141D2F;
+    position: relative;
+    display: flex;
+    @media (min-width: 951px) {
+        display: none;
+    }
+    @media (max-width: 950px) {
+        height: 850px;
+    }
+}
+
+.skills-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 54px;
+    width: 100%;
+    position: absolute;
+    top: 200px;
+    z-index: 3;
+}
+
+.first-skillline-mobile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    img {
+        width: 80px;
+        height: 100px;
+        &:hover {
+            transform: translateY(-30px);
+            transition: all 125ms ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+
+.second-skillline-mobile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    img {
+        width: 80px;
+        height: 100px;
+        &:hover {
+            transform: translateY(-30px);
+            transition: all 125ms ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+
+.third-skillline-mobile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    img {
+        width: 80px;
+        height: 100px;
+        &:hover {
+            transform: translateY(-30px);
+            transition: all 125ms ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+
+.fourth-skillline-mobile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    img {
+        width: 80px;
+        height: 100px;
+        &:hover {
+            transform: translateY(-30px);
+            transition: all 125ms ease-in-out;
+            cursor: pointer;
+        }
+    }
+}
+
+.skills-description-mobile {
+    position: absolute;
+    width: 100%;
+    height: 54px;
+    top: 0px;
+    h1 {
+        height: 80px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 120%;
+        text-align: right;
+        margin-right: 100px;
+        color: #FFFFFF;
+        margin: 0;
+        margin-right: 26px;
+    }
+    p {
+        height: 57px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 120%;
+        text-align: right;
+        color: #FFFFFF;
+        margin: 0;
+        margin-left: 26px;
+        margin-right: 26px;
+    }
+    img {
+        position: absolute;
+        right: 0;
+        top: 29px;
+        width: 22px;
+        height: 5px;
+    }
+    .get-in-touch {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        position: absolute;
+        width: 165px;
+        height: 58px;
+        top: 830px;
+        left: 50%;
+        transform: translate(-50%);
+        background: #00BEE8;
+        box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        padding: 0px 30px 0px 30px;
+        cursor: pointer;
+        a {
+            text-align: center;
+            width: 165px;
+            height: 25px;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 23px;
+            line-height: 120%;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        &:hover {
+            @media (min-width: 951px) {
+                background: rgb(75, 71, 255);
+                transform: scale(1.15);
+                transition: all 125ms ease-in-out;
+            }
+        }
+    }
+}
